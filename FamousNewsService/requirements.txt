@@ -1,0 +1,7 @@
+Flask
+nameko 
+nameko-sqlalchemy 
+mongoengine 
+sqlalchemy 
+psycopg2 
+pytest 
