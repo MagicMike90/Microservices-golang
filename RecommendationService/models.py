@@ -1,6 +1,10 @@
 import os
 
-from py2neo import Graph, Node, Relationship
+from py2neo import (
+    Graph,
+    Node,
+    Relationship,
+)
 
 USERS_NODE = 'Users'
 LABELS_NODE = 'Labels'
@@ -42,14 +46,14 @@ def get_users_by_label(label):
 
 
 def create_user_node(user):
-  # get user info from UsersService
+    # get user info from UsersService
     if not get_user_node(user.id):
         user_node = Node(
             USERS_NODE,
             id=user.id,
             name=user.name,
             email=user.email,
-    
+        )
         graph.create(user_node)
 
 
