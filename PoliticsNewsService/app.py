@@ -9,7 +9,7 @@ app = Flask(__name__)
 app_settings = os.getenv('APP_SETTINGS')
 app.config.from_object(app_settings)
 
-db.init_app(app)
+db.init_app(app)d
 
 app.register_blueprint(politics_news)
 
